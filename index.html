@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galass Handbags</title>
+    <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script|Roboto:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav class="main-nav clearfix">
+                <ul class="clearfix">
+                    <li class="mobile-hidden"><a href="#">Home</a></li>
+                    <li class="mobile-hidden"><a href="#">About</a></li>
+                    <li class="mobile-hidden"><a href="#">Blog</a></li>
+                    <li class="mobile-hidden"><a href="#">Contact</a></li>
+                </ul>
+                <a href="#" class="hamburger"><i class="fas fa-bars"></i></a>
+            </nav>
+            <div class="banner">
+                <h1>Galass <span>Handbags</span></h1>
+                <!-- <img src="assets/group-bags.png" alt="One large organge handbag at the back, one small red handbag in the middle and one medium yellow bag at the fornt"> -->
+                <div class="social-media mobile-hidden">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div> <!-- .social-media -->
+            </div>
+        </div>  <!-- .wrapper -->
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="wrapper clearfix">
+                <img src="assets/square-photo.jpg" alt="Blue handbag with brown lether straps">
+                <div class="about-content">
+                    <h2>Hand crafted</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum
+                    consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla </p>
+                    <button>read more</button>
+                </div>       
+            </div> <!-- .wrapper  -->
+        </section>  <!-- .about  -->
+
+        <section class="gallery">
+            <div class="wrapper">
+                <h2>Latest collection</h2>
+                <div class="clearfix">
+                    <img class="gallery-img" src="assets/gallery-photo-1.jpg" alt="Black handbag with four short golden strap with black and white decorations">
+                    <img class="gallery-img mobile-hidden" src="assets/gallery-photo-2.jpg" alt="Brown handbag with shades os redish and black semi-circles and a flower with shoulder strap">
+                    <img class="gallery-img" src="assets/gallery-photo-3.jpg" alt="White handbag with a small pocket at the front with silver details and long strip behind a round sunglasses">
+                </div>
+            </div> <!-- .wrapper  -->
+        </section> <!-- .gallery -->
+
+        <section class="trio-links">
+            <div class="wrapper clearfix">
+                <div>
+                    <a href="#">
+                        <i class="far fa-images"></i>
+                        <p>catologue</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <i class="far fa-calendar-alt"></i>
+                        <p>events</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <i class="far fa-handshake"></i>
+                        <p>collaborations</p>
+                    </a>
+                </div>
+            </div> <!-- .wrapper -->
+        </section>
+
+        <section class="articles clearfix">
+            <div class="article-container">
+                <article class="article-content wrapper-inner inner-right">
+                    <h2>Fall Trends</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
+                    <button>read more</button>
+                </article>
+            </div>
+            <img src="assets/right-photo.jpg" alt="Black handbag with zipper at the top and a small red pocket at the front right side">
+            <img src="assets/left-photo.jpg" alt="Caramel shoulder bag with a fur keychain on the side">
+            <div class="article-container">
+                <article class="article-content wrapper-inner inner-left">
+                    <h2>Vegan Leather</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
+                    <button>read more</button>
+                </article>
+            </div>
+        </section> <!-- .articles -->
+    </main>
+
+    <footer>
+        <div class="main-footer clearfix">
+            <div class="wrapper">
+                <nav class="footer-nav">
+                    <ul class="clearfix">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">gallary</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="subscribe">
+                    <h2>Stay updated</h2>
+                    <p>Subscribe to our newsletter to stay updated.</p>
+                    <form action="" method="POST" class="my-form clearfix" name="">
+                        <input type="email" class="email" placeholder="email address" id="email" required>
+                        <label for="email" class="visually-hidden">email address</label>
+                        <button type="submit">subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>info@email.com | 123-456-7890</p>
+                    <p>123 some road, Toronto, ON</p>
+                    <p>A5A 5A5, Canada</p>
+                </div>
+            </div>
+        </div> <!-- .main-footer -->
+        <div class="copyright">
+            <p>Copyright &copy 2019 HackerYou</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

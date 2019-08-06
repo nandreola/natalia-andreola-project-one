@@ -1,0 +1,477 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+/* General styles  */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0; 
+    font-size: 2rem; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    line-height: 2.9rem;
+    letter-spacing: 0.02rem;
+    color: #ffffff;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mobile-hidden {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+button,
+input[type=email] {
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 9rem;
+    line-height: 9.43rem;
+    text-align: right;
+    padding-right: 8rem;
+}
+
+h2 {
+    font-size: 5.4rem;
+}
+
+h3 {
+    font-size: 4.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: center;
+    border: none;
+    display: block;
+    padding: 15px 20px;
+}
+
+p {
+    margin: 0;
+}
+
+/* Header styles  */
+
+.main-nav a.hamburger {
+    float: right;
+    display: none;
+    font-size: 2.5rem;
+}
+
+header, 
+.gallery,
+.articles {
+    background: #815600;
+}
+
+.about,
+.trio-links,
+.main-footer {
+    background: #500801;
+}
+
+button, 
+.copyright {
+    background: #1d0303;
+}
+
+.banner {
+    background-image: url("../assets/group-bags.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 70vh;
+    position: relative;
+}
+
+.main-nav ul {
+    margin-top: 0;
+    padding-left: 0;
+    display: inline-block;
+}
+
+.main-nav ul li {
+    float: left;
+}
+
+.main-nav a {
+    padding: 10px 20px;
+    display: inline-block;
+
+}
+
+.main-nav a:hover {
+    background: #1d0303;
+}
+
+.banner h1 {
+    width: 50%;
+    clear: both;
+    position: relative;
+    top: 150px;  
+    margin: 0;
+    border: 1px solid blue;
+}
+
+.banner span {
+    display: block;
+    border: 1px solid red;
+}
+
+.social-media {
+    position: absolute;
+    bottom: 0;
+    right: -40px;
+}
+
+.social-media a {
+    padding: 1px;
+    text-align: center;
+    display: block;
+}
+
+.social-media a:hover {
+    color: #1d0303;
+}
+
+header {
+    padding: 20px 0 45px 0;
+}
+
+/* About section styles  */
+.about {
+    padding: 70px 0;
+}
+
+.about img {
+    width: 315px;
+    height: 315px;
+    object-fit: cover;
+}
+
+.about-content {
+    width: calc(100% - 315px);
+}
+
+.about img,
+.about-content {
+    float: left;
+}
+
+.about-content {
+    padding-left: 35px;
+}
+
+.about-content p {
+    margin: 30px 0 25px 0;
+}
+
+.about h2 {
+    margin-top: 0;
+}
+
+/* Gallery section styles */
+
+.gallery {
+    padding: 70px 0 100px 0;
+}
+
+.gallery h2 {
+    margin-bottom: 80px;
+}
+
+.gallery h2,
+.subscribe,
+.copyright {
+    text-align: center;
+}
+
+.gallery-img {
+    width: calc((100% / 3) - 35px);
+    display: block;
+    float: left;
+    margin-right: 35px;
+}
+
+.gallery img:nth-of-type(3) {
+    margin-right: 0; 
+    /* why there is still a space after my 3rd img????????? */
+}
+
+/* Trio links section  */
+
+.trio-links {
+    padding: 50px 0 60px 0;
+}
+
+.trio-links .wrapper div {
+    width: calc(100% / 3);
+    text-align: center;
+    float: left;
+}
+
+.trio-links i {
+    font-size: 6rem;
+}
+
+.trio-links p {
+    font-family: 'Petit Formal Script', cursive;
+    margin-top: 20px;
+}
+
+/* Articles section  */
+
+.wrapper-inner {
+    max-width: 640px;
+    width: 90%;
+}
+
+.inner-right {
+    margin: 100px 0 0 auto;
+}
+
+.inner-left {
+    margin-top: 100px;
+}
+
+.article-container,
+.articles img {
+    width: 50%;
+    float: left;
+} 
+
+.inner-right p {
+    padding-right: 95px;
+}
+
+.inner-left {
+    padding-left: 95px;
+}
+
+.article-content button {
+    margin-top: 30px;
+}
+
+/* Footer styles  */
+
+.main-footer {
+    padding: 45px 0;
+}
+
+.footer-nav,
+.subscribe, 
+.footer-contact {
+    float: left;
+}
+
+.footer-nav {
+    width: 25%;
+    margin-top: 80px;
+}
+
+.footer-nav ul {
+    padding-left: 0;
+}
+
+.footer-nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+.subscribe {
+    width: 50%;
+}
+
+.footer-contact {
+    width: 25%;
+    text-align: right;
+    margin-top: 25px;
+}
+
+.footer-contact h3 {
+    margin-bottom: 20px;
+}
+
+.my-form {
+    margin-top: 15px;
+}
+
+input[type=email] {
+    width: 70%;
+    border: none;
+    padding: 15px;
+    float: left;
+}
+
+footer button {
+    width: 30%;
+    float: left;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.copyright {
+    padding: 15px 0;
+}
+
+/* Responsive design  */
+
+
+@media (max-width: 480px) {
+    .mobile-hidden {
+        display: none;
+    }
+
+    .main-nav a.hamburger {
+        display: block;
+    }
+
+    .banner h1 {
+        font-size: 6rem;
+        line-height: 6.5rem;
+        width: 100%;
+        top: 0;
+        padding-right: 0;
+    }
+
+    /* header {
+        background-position: left;  this is not doing anything 
+    } */
+
+    .about img,
+    .about-content {
+        width: 100%;
+        float: none;
+    }
+
+    .about img {
+        padding-bottom: 40px;
+    }
+
+    .about-content {
+        padding-left: 0;
+    }
+
+    .about {
+        padding-bottom: 50px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 4.8rem;
+    }
+
+    button {
+        margin: 0 auto;
+    }
+
+    .gallery-img {
+        width: calc(50% - 10px);
+        margin-right: 10px;
+        float: right;
+    }
+
+    .gallery img:nth-of-type(3) {
+        margin-right: 10px; 
+    }
+
+    .gallery img:nth-of-type(1) {
+        margin-right: 0; 
+    }
+
+    .gallery h2,
+    .article-content h2 {
+        margin-top: 0;
+    }
+
+    .trio-links .wrapper div {
+        float: none;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .gallery {
+        padding: 60px 0;
+    }
+
+    .article-container,
+    .articles img {
+        float: none;
+        width: 100%;
+    }
+
+    .inner-right,
+    .inner-left {
+        margin: 0 auto;
+        padding: 60px 0 40px;
+    }
+
+    .inner-right p {
+        padding-right: 0;
+    }
+
+    .footer-nav,
+    .subscribe, 
+    .footer-contact {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-nav {
+        margin-top: 0;
+    }
+
+    .footer-nav li {
+        float: left;
+        margin-right: 50px;
+    }
+
+    .footer-nav li:nth-last-of-type(last) {
+        margin-right: 0;
+    }
+
+
+}
