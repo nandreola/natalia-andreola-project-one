@@ -24,7 +24,6 @@
             </nav>
             <div class="banner">
                 <h1>Galass <span>Handbags</span></h1>
-                <!-- <img src="assets/group-bags.png" alt="One large organge handbag at the back, one small red handbag in the middle and one medium yellow bag at the fornt"> -->
                 <div class="social-media mobile-hidden">
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -43,7 +42,9 @@
                     <h2>Hand crafted</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum
                     consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla </p>
-                    <button>read more</button>
+                    <div class="button-read">
+                        <a href="#" class="button">read more</a>
+                    </div>
                 </div>       
             </div> <!-- .wrapper  -->
         </section>  <!-- .about  -->
@@ -83,20 +84,26 @@
         </section>
 
         <section class="articles clearfix">
-            <div class="article-container">
-                <article class="article-content wrapper-inner inner-right">
-                    <h2>Fall Trends</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
-                    <button>read more</button>
-                </article>
+            <div class="clearfix">
+                <img class="article-img-one" src="assets/right-photo.jpg" alt="Black handbag with zipper at the top and a small red pocket at the front right side">
+                <div class="article-container">
+                    <article class="article-content wrapper-inner inner-right">
+                        <h2>Fall Trends</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
+                        <div class="button-read">
+                            <a href="#" class="button">read more</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <img src="assets/right-photo.jpg" alt="Black handbag with zipper at the top and a small red pocket at the front right side">
             <img src="assets/left-photo.jpg" alt="Caramel shoulder bag with a fur keychain on the side">
             <div class="article-container">
                 <article class="article-content wrapper-inner inner-left">
                     <h2>Vegan Leather</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
-                    <button>read more</button>
+                    <div class="button-read">
+                        <a href="#" class="button">read more</a>
+                    </div>
                 </article>
             </div>
         </section> <!-- .articles -->
@@ -109,17 +116,17 @@
                     <ul class="clearfix">
                         <li><a href="#">home</a></li>
                         <li><a href="#">blog</a></li>
-                        <li><a href="#">gallary</a></li>
+                        <li><a href="#">gallery</a></li>
                         <li><a href="#">contact</a></li>
                     </ul>
                 </nav>
                 <div class="subscribe">
                     <h2>Stay updated</h2>
                     <p>Subscribe to our newsletter to stay updated.</p>
-                    <form action="" method="POST" class="my-form clearfix" name="">
-                        <input type="email" class="email" placeholder="email address" id="email" required>
+                    <form action="" method="POST" class="my-form clearfix">
+                        <input type="email" class="email" placeholder="email address" name="email" id="email" required>
                         <label for="email" class="visually-hidden">email address</label>
-                        <button type="submit">subscribe</button>
+                        <button type="submit" class="button">subscribe</button>
                     </form>
                 </div>
                 <div class="footer-contact">

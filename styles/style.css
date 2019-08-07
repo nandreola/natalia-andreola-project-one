@@ -34,6 +34,7 @@ body {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 li {
@@ -43,8 +44,7 @@ li {
 h1,
 h2,
 h3,
-button,
-input[type=email] {
+.button {
     font-family: 'Petit Formal Script', cursive;
     font-weight: normal;
 }
@@ -69,13 +69,17 @@ a {
     color: #ffffff;
 }
 
-button {
+.button {
     color: #ffffff;
     font-size: 2.5rem;
     text-align: center;
-    border: none;
-    display: block;
-    padding: 15px 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+}
+
+.button:hover {
+    border: 1px solid #fff;
 }
 
 p {
@@ -87,7 +91,7 @@ p {
 .main-nav a.hamburger {
     float: right;
     display: none;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 header, 
@@ -102,7 +106,7 @@ header,
     background: #500801;
 }
 
-button, 
+.button, 
 .copyright {
     background: #1d0303;
 }
@@ -129,7 +133,6 @@ button,
 .main-nav a {
     padding: 10px 20px;
     display: inline-block;
-
 }
 
 .main-nav a:hover {
@@ -140,26 +143,25 @@ button,
     width: 50%;
     clear: both;
     position: relative;
-    top: 150px;  
+    top: 220px;  
     margin: 0;
-    border: 1px solid blue;
 }
 
 .banner span {
     display: block;
-    border: 1px solid red;
 }
 
 .social-media {
     position: absolute;
     bottom: 0;
-    right: -40px;
+    right: -50px;
 }
 
 .social-media a {
-    padding: 1px;
+    padding-bottom: 10px;
     text-align: center;
     display: block;
+    font-size: 2.5rem;
 }
 
 .social-media a:hover {
@@ -172,7 +174,7 @@ header {
 
 /* About section styles  */
 .about {
-    padding: 70px 0;
+    padding: 109px 0;
 }
 
 .about img {
@@ -205,11 +207,11 @@ header {
 /* Gallery section styles */
 
 .gallery {
-    padding: 70px 0 100px 0;
+    padding: 70px 0 180px 0;
 }
 
 .gallery h2 {
-    margin-bottom: 80px;
+    margin-bottom: 85px;
 }
 
 .gallery h2,
@@ -219,15 +221,14 @@ header {
 }
 
 .gallery-img {
-    width: calc((100% / 3) - 35px);
+    width: calc((100% / 3) - 40px);
     display: block;
     float: left;
-    margin-right: 35px;
+    margin-right: 40px;
 }
 
 .gallery img:nth-of-type(3) {
     margin-right: 0; 
-    /* why there is still a space after my 3rd img????????? */
 }
 
 /* Trio links section  */
@@ -243,12 +244,13 @@ header {
 }
 
 .trio-links i {
-    font-size: 6rem;
+    font-size: 7rem;
 }
 
 .trio-links p {
     font-family: 'Petit Formal Script', cursive;
     margin-top: 20px;
+    font-size: 2.5rem;
 }
 
 /* Articles section  */
@@ -272,6 +274,10 @@ header {
     float: left;
 } 
 
+.articles img.article-img-one {
+    float: right;
+}
+
 .inner-right p {
     padding-right: 95px;
 }
@@ -280,7 +286,7 @@ header {
     padding-left: 95px;
 }
 
-.article-content button {
+.article-content .button {
     margin-top: 30px;
 }
 
@@ -332,9 +338,15 @@ input[type=email] {
     border: none;
     padding: 15px;
     float: left;
+    position: relative;
+    z-index: 10;
 }
 
-footer button {
+input[type=email]:focus {
+    outline: 3px solid lightblue;
+}
+
+footer .button {
     width: 30%;
     float: left;
 }
@@ -358,8 +370,7 @@ footer button {
 
 /* Responsive design  */
 
-
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .mobile-hidden {
         display: none;
     }
@@ -373,12 +384,19 @@ footer button {
         line-height: 6.5rem;
         width: 100%;
         top: 0;
-        padding-right: 0;
+        padding-right: 20px;
+        margin-top: 45px;
     }
 
-    /* header {
-        background-position: left;  this is not doing anything 
-    } */
+    .banner {
+        background-position: 10% 100%;
+        background-size: auto 90%;  
+        height: 60vh;
+    }
+
+    header .wrapper {
+        width: 100%;
+    }
 
     .about img,
     .about-content {
@@ -395,16 +413,16 @@ footer button {
     }
 
     .about {
-        padding-bottom: 50px;
+        padding: 50px 0;
     }
 
     h2 {
         text-align: center;
-        font-size: 4.8rem;
+        font-size: 4rem;
     }
 
-    button {
-        margin: 0 auto;
+    .button-read {
+        text-align: center;
     }
 
     .gallery-img {
@@ -421,15 +439,11 @@ footer button {
         margin-right: 0; 
     }
 
+    .about h2,
     .gallery h2,
     .article-content h2 {
         margin-top: 0;
-    }
-
-    .trio-links .wrapper div {
-        float: none;
-        width: 100%;
-        padding-bottom: 40px;
+        margin-bottom: 50px;
     }
 
     .gallery {
@@ -440,6 +454,10 @@ footer button {
     .articles img {
         float: none;
         width: 100%;
+    }
+
+    .article-img-one {
+        margin-bottom: 60px;
     }
 
     .inner-right,
@@ -462,16 +480,71 @@ footer button {
 
     .footer-nav {
         margin-top: 0;
+        padding-left: 20%;
     }
 
     .footer-nav li {
         float: left;
-        margin-right: 50px;
+        margin-right: 55px;
+        text-transform: capitalize;
     }
 
-    .footer-nav li:nth-last-of-type(last) {
+    .footer-nav li:last-child {
         margin-right: 0;
     }
 
+    input[type="email"],
+    footer .button {
+        float: none;
+    }
 
+    input[type="email"] {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer .button {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        background-position: -45% 100%;
+        background-size: auto 70%;  
+    }
+
+    .trio-links .wrapper div {
+        float: none;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .footer-nav {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    .banner h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
 }
